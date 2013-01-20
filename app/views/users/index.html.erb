@@ -1,0 +1,7 @@
+<h1>Inventory Users</h1>
+
+<% @users.each do |user| %>
+  <div class="user">
+    <p><%= user.firstname.capitalize+" "+user.lastname.capitalize%></p>
+  </div>
+<% end %>
