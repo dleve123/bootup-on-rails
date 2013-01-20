@@ -11,3 +11,17 @@
  *= require_self
  *= require_tree .
  */
+body {
+  background-color: #104BA9;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  right: 40%;
+  margin: auto 0;
+}
+
+footer p {
+  border: 1px red;
+}
