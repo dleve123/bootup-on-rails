@@ -8,10 +8,29 @@
   </head>
   <body id="home">
     <div id="wrapper">
-      <div id="header"></div>
-      <div id="menu"></div>
+      <div id="header">
+        <div id="logo">
+          <h1>
+            <%= link_to image_tag("Bootup_Baltimore_logo_small_transparent.png", :width => "300px", :padding => "20 0 0 0"), root_path %>
+            <br>
+            <span>Bringing computers and technology to Baltimoreans in need</span>
+          </h1>
+        </div>
+      </div>
+      <div id="menu">
+        <ul>
+          <li class='current'><a href="/">Home</a></li>
+          <li ><a href="edit_donor.php">Donors</a></li>
+          <li ><a href="edit_recipient.php">Recipients</a></li>
+          <li ><a href="edit_donation.php">Donations</a></li>
+          <li ><a href="edit_item.php">Items</a></li>
+          <li><%= link_to "Users", users_path %></li>
+        </ul>
+      </div>
       <div id="page">
-        <%= yield %>
+        <div class="post">
+          <%= yield %>
+        </div>
       </div>
       <div id="footer">
         <footer>
